@@ -1,0 +1,29 @@
+unittec:
+  iot:
+    mqtt:
+      server:
+        enable: true
+        host: 192.168.1.22
+        port: 8085
+        log: false
+        protocol: MQTT
+        heart: 100000
+        ssl: false
+logging:
+  level:
+    io.netty: debug
+server:
+  port: 8082
+spring:
+  redis:
+    host: 47.111.125.13
+    port: 16379
+    password: admin
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        min-idle: 1
+        max-idle: 8
+    timeout: 50000ms
+    database: 14
